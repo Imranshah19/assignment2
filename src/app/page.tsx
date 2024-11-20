@@ -1,101 +1,124 @@
-import Image from "next/image";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+<div className ="bg-[#252B42] min-h-screen min-w-max h-[1132px] ">
+<nav className="text-[#ffffff] px-56 py-4">
+<div className="container mx-auto flex items-center gap-16">
+    {/* Brand Name */}
+    <h3 className="font-montserrat font-bold text-2xl leading-8 tracking-wide xl:flex-cols justify-start">
+            BrandName
+          </h3>
+          {/* Links */}
+          <div className="flex gap-8">
+            <Link href="#" className="hover:text-gray-400">
+              Home
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Product
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Pricing
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Contact
+            </Link>
+          </div>
+          {/* button */}
+          <div className="flex ml-auto gap-20 pt-5">
+            <a href="#" className="pt-2 hover:text-gray-400">
+              Login
+            </a>
+            <button className="bg-[#23A6F0] p-2 hover:text-gray-400">
+              {" "}
+              JOIN US
+            </button>
+          </div>
+          <div className="text-black">...</div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+      {/* Main-content */}
+      <div className="flex justify-center">
+        <div className="relative w-[699px] h-[496px] pt-20 pb-40 gap-10 text-center">
+          <h5 className="text-[#23A6F0] leading-5 tracking-[0.1px] font-bold text-sm">
+            Welcome
+          </h5>
+          <br />
+          <div className="w-[542px] h-40 ml-20 mt-10">
+            <h1 className="font-Montserrat font-bold text-5xl leading-[60px] text-[#ffffff] ">
+              Selling on the internet like a pro
+            </h1>
+          </div>
+          <div className="w-[480px] h-[60px] ml-28  text-xl text-[#ffffff] font-light text-center mb-10">
+            <h4>
+              We know hpw large objects will act, but things on a <br />
+              small scale just do not act that way
+            </h4>
+          </div>
+          <div className="w-[365px] h-[52px] gap-[10px] ml-40 flex">
+            <button className="bg-[#23A6F0] p-3 w-[193px] text-[#ffffff] text-sm font-bold font-Montserrat">
+              Get Quote Now
+            </button>
+            <button className="border-[#23A6F0] border-solid border-[1px] rounded-[5px] w-[162px] text-[#23A6F0] font-Montserrat font-bold text-sm">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="relative w-[1046px] h-[292px] border-2 border-solid gap-[30px] mt-[120px] grid grid-cols-3">
+          <div
+            className="w-[328px] h-[292px] bg-[#ffffff]
+         shadow-transparent drop-shadow-md"
+          >
+            <div className="w-[70px] h-[76px] rounded-[10px] bg-[#FFDCD1] mt-8 ml-8"></div>
+            <h5 className="text-[#252B42] font-Montserrat font-bold text-base pt-4 ml-8">
+              traing Courses
+            </h5>
+            <div className="w-[50px] h-[2px] bg-[#E74040] mt-4 ml-8"></div>
+            <p
+              className="font-Montserrat text-sm tracking-[0.2px] text-[#737373] pt-5 w-[222px] h-[60px]
+          ml-8"
+            >
+              The gradual accumulation of information about atomic and
+              small-scale behaviour...
+            </p>
+          </div>
+          <div
+            className="w-[328px] h-[292px] bg-[#ffffff]
+        shadow-transparent drop-shadow-md"
+          >
+            <div className="w-[70px] h-[76px] rounded-[10px] bg-[#B9EAA8] mt-8 ml-8"></div>
+            <h5 className="text-[#252B42] font-Montserrat font-bold text-base pt-4 ml-8">
+              2,769 online courses
+            </h5>
+            <div className="w-[50px] h-[2px] bg-[#E74040] mt-4 ml-8"></div>
+            <p
+              className="font-Montserrat text-sm tracking-[0.2px] text-[#737373] pt-5 w-[222px] h-[60px]
+          ml-8"
+            >
+              The gradual accumulation of information about atomic and
+              small-scale behaviour...
+            </p>
+          </div>
+          <div className="w-[328px] h-[292px] bg-[#23A6F0] drop-shadow-md">
+            <div className="w-[70px] h-[76px] rounded-[10px] bg-[#FFFFFF] mt-8 ml-8"></div>
+            <h5 className="text-[#FFFFFF] font-Montserrat font-bold text-base pt-4 ml-8">
+              training Courses
+            </h5>
+            <div className="w-[50px] h-[2px] bg-[#FFFFFF] mt-4 ml-8"></div>
+            <p
+              className="font-Montserrat text-sm tracking-[0.2px] text-[#FFFFFF] pt-5 w-[222px] h-[60px]
+          ml-8"
+            >
+              The gradual accumulation of information about atomic and
+              small-scale behaviour...
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
+
